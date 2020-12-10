@@ -1,0 +1,6 @@
+# Project exclude paths
+/client/target/
+/client1/target/
+/feign/target/
+/register/target/
+/ribbon/target/

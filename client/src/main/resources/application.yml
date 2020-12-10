@@ -1,0 +1,12 @@
+## 当前项目部署的端口
+server:
+    port: 9992
+#配置注册中心的位置，并把自己注册进去
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9991/eureka/
+#此服务器名称
+spring:
+    application:
+        name: service-client

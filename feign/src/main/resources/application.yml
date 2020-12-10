@@ -1,0 +1,15 @@
+## 指明注册中心的位置
+server:
+    port: 9994
+## 当前项目部署的端口
+eureka:
+  client:
+      service-url:
+          defaultZone: http://localhost:9991/eureka/
+##当前项目名称
+spring:
+  application:
+      name: service-feign
+feign:
+    hystrix:
+        enabled: true
