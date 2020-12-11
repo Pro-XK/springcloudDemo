@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>feign</artifactId>
+    <artifactId>zuul</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>feign</name>
+    <name>zuul</name>
     <parent>
-        <artifactId>parent</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
+        <artifactId>parent</artifactId>
     </parent>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,16 +21,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-netflix-zuul</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

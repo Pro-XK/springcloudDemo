@@ -17,6 +17,6 @@ public class HelloController {
 	private String port;
 	@RequestMapping("/hi")
 	public String sayHello(String name){
-		return "hi"+name+ " , I am " + port + " port";
+		return "hi,"+name+ " , I am " + port + " port";
 	}
 }
